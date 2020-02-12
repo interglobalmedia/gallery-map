@@ -1,0 +1,26 @@
+{
+  "name": "gallery-map",
+  "version": "1.0.0",
+  "description": "A little application that creates img elements and maps over them!",
+  "main": "main.js",
+  "scripts": {
+    "scss": "node-sass --watch style/scss -o style/css",
+    "clean": "rm -rf dist/ && mkdir dist/",
+    "build": "cp -R assets dist/ && cp index.html main.css main.js dist/",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/interglobalmedia/gallery-map.git"
+  },
+  "author": "Maria D. Campbell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/interglobalmedia/gallery-map/issues"
+  },
+  "homepage": "https://github.com/interglobalmedia/gallery-map#readme",
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "node-sass": "^4.13.1"
+  }
+}
