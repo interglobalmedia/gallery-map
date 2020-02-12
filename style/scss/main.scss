@@ -1,0 +1,24 @@
+$max799: "(max-width: 799px)";
+
+#images {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  @media #{$max799} {
+    display: block;
+  }
+}
+
+img {
+  height: 150px;
+  width: 150px;
+}
